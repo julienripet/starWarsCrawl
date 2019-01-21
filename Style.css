@@ -26,7 +26,7 @@ body{
 .starWars{
     display: flex;
     justify-content: center;
-    height: 800px;
+    height: 90vh;
     perspective: 400px;
     font-family: 'Pathway Gothic One', sans-serif;
     font-size: 500%;
