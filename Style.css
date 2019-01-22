@@ -5,6 +5,10 @@
     font-family: sans-serif;
 }
 
+audio{
+    visibility: hidden;
+}
+
 body{
     background-image: url(pictures/Background_Starwars.jpg);
     color: #feda4a;
@@ -16,6 +20,10 @@ body{
 .title{
     margin-bottom: 5%;
     text-transform: capitalize;
+}
+
+.blueText{
+    color: skyblue;font-size: 1.7em;
 }
 
 .title p{
