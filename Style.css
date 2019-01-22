@@ -24,6 +24,12 @@ body{
 
 .blueText{
     color: skyblue;font-size: 1.7em;
+    visibility: hidden;
+    animation: fade 4s;
+    font-size: 10vmin;
+    text-align: center;
+    top: 45vh;
+    position: absolute;
 }
 
 .title p{
@@ -56,17 +62,44 @@ body{
     position: relative;
     top:-100;
     transform-origin: 50% 100%;
-    animation: crawl 45s linear;
+    animation: crawl 45s 4s linear;
+    visibility: hidden;
 }
 @keyframes crawl{
     0%
     {
         top:0;    
         transform: rotateX(20deg) translateY(0);
+        visibility: visible;
+    }
+    50%
+    {
+        
     }
     100%
     {
         top:-10000;
         transform: rotateX(25deg) translateY(-2500px);
+        visibility: visible;
+    }
+}
+@keyframes fade{
+    0%
+    {
+        visibility: visible;
+        color: rgba(135, 206, 235, 1);
+    }
+    50%
+    {
+        color: rgba(135, 206, 235, 0.8);
+        visibility: visible;
+
+
+    }
+    100%
+    {
+        color: rgba(135, 206, 235, 0);
+        visibility: hidden;
+
     }
 }
